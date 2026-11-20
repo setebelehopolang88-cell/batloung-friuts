@@ -1,6 +1,9 @@
-node_modules
+# Never put these on GitHub
+node_modules/
+dist/
 .env
-uploads/*
-!uploads/.gitkeep
-private/proofs/*
-!private/proofs/.gitkeep
+backend/.setup_done
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.log
+.DS_Store

@@ -1,17 +1,10 @@
 {
-  "name": "batloung-farm-backend",
-  "version": "1.0.0",
-  "description": "Batloung Farm Distribution Management System - REST API",
-  "main": "server.js",
+  "name": "batloung-farm",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
-    "db:init": "node scripts/initDb.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mysql2": "^3.11.0"
+    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "db:init": "npm run db:init --prefix backend",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
   }
 }
